@@ -33,7 +33,16 @@
                     <div class="section">
                         <img src="media/code.png">
                         <h2>Image messenger + countdown</h2>
-                        <p>Test</p>
+                        <p id="myId"></p> 
+                        <script> 
+                            var date = new Date(); 
+                            var dd = date.getDate(); 
+                            var mm = date.getMonth() + 1; 
+                            var yyyy = date.getFullYear(); 
+                            var newDate = dd + "-" + mm + "-" +yyyy; 
+                            var p = document.getElementById("myId"); 
+                            p.innerHTML = newDate; 
+                        </script> 
                     </div>
                 </div>
             </div>
