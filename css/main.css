@@ -1,0 +1,270 @@
+html, body, div, span, h1, h2, h3, a, p, img, video {
+    font-family: Helvetica;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: rgb(3, 0, 52);
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 3em;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+p {
+    color: rgb(183, 178, 201);
+    font-size: 1.25em;
+    padding: 1em 1em 1em 1em;
+}
+
+/* Barre de navigation */
+    .navbar {
+        width:100%;
+        padding: 20px 0;
+        background-color: rgb(3, 0, 52);
+        text-align: center;
+        position: fixed !important;
+    }
+
+    .navbar a {
+        color: rgb(129, 123, 158);
+        letter-spacing: 4px;
+        transition: 0.2s;
+        font-size: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding-top: 20px;
+        padding-bottom: 18px;
+        border-bottom: 3px solid rgb(138, 27, 189);
+        margin: 2%;
+    }
+    
+    .navbar a:hover {
+        color: rgb(255, 255, 255);
+        letter-spacing: 6px;
+        transition: 0.5s;
+        border-bottom: 3px solid rgb(23, 109, 207);
+    }
+
+/* Accueil */
+    .accueil {
+        height: 100vh;
+        background-image: url(../media/accueil.jpg);
+        background-size: 100% 100%;
+    }
+
+    .accueil h1 {
+        padding: 30vh 10% 0 10%;
+    }
+
+    .accueil p {
+        padding: 5vh 15% 0 15%;
+    }
+
+/* Presentation */
+    .presentation {
+        background-color: rgb(13, 78, 147);
+        background-size: 100% 100%;
+        padding: 2em 2em 2em 2em;
+    }
+
+    .presentation .section {
+        border-radius: 15px;
+        width: 98%;
+        border: solid 4px rgb(13, 78, 147);
+        background-color: rgb(44, 105, 170);
+    }
+
+    .presentation .section h2 {
+        padding: 1em 1em 0em 3em;
+    }
+
+    .presentation .section p {
+        padding: 1em 1em 1em 4em;
+    }
+
+    .columns {
+        width: 100%;
+    }
+
+    .column {
+        width:100%;
+    }
+
+    img {
+        width: 30px;
+        padding: 1.4em 0em 0em 1.4em;
+        float: left;
+    }
+    
+    @media (min-width: 1000px) {
+        .column {
+            width: 50%;
+            float:left;
+        }
+        .columns {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    }
+
+/* Portfolio */
+    .portfolio {
+        background-color: rgb(87, 12, 144);
+        background-size: 100% 100%;
+        padding: 2em 2em 2em 2em;
+    }
+
+    .portfolio .section {
+        border-radius: 15px;
+        width: 98%;
+        overflow: auto;
+        border: solid 4px rgb(87, 12, 144);
+        background-color: rgb(112, 29, 175);
+    }
+
+    .portfolio .section h2 {
+        padding-top: 1em;
+    }
+
+    .portfolio img {
+        padding-right: 1em;
+    }
+
+    .portfolio .section p {
+        margin-left: 300px;
+        padding: 1em 1em 1em 3em;
+    }
+
+    .portfolio video {
+        padding: 1em 1em 1em 1em;
+        width: 30%;
+        min-width: 300px;
+        float: left;
+    }
+
+/* Contact */
+    .contacter {
+        background-color: rgb(3, 0, 52);
+        background-size: 100% 100%;
+        padding: 2em 2em 2em 2em;
+    }
+
+    .contacter .section {
+        border-radius: 15px;
+        width: 98%;
+        border: solid 4px rgb(3, 0, 52);
+        background-color: rgb(18, 14, 99);
+    }
+
+    .contacter .section h2 {
+        padding: 1em 1em 1em 3em;
+    }
+
+    .contacter .section p {
+        padding: 0em 1em 1em 4em;
+    }
+
+/* Tailles */
+    @media (max-width:1000px) { 
+        .navbar a {
+            font-size: 9px;
+            letter-spacing: 3px;
+            margin: 1.7%;
+        }
+
+        .navbar a:hover {
+            letter-spacing: 4.5px;
+        }
+
+        .portfolio video {
+            width: 95%;
+            float: none;
+            min-width: 0;
+        }
+
+        .portfolio .section p {
+            margin-left: 0px;
+            padding: 1em 1em 1em 1em;
+        }
+    }
+
+
+    @media (max-width:800px) {
+        .navbar a {
+            font-size: 8px;
+            letter-spacing: 2px;
+            margin: 1.4%;
+        }
+
+        .navbar a:hover {
+            letter-spacing: 3px;
+        }
+
+        .portfolio video {
+            width: 92.5%;
+        }
+    }
+
+    @media (max-width:600px) {
+        .navbar a {
+            font-size: 7px;
+            letter-spacing: 1px;
+            margin: 1.1%;
+        }
+
+        .navbar a:hover {
+            letter-spacing: 1.5px;
+        }
+
+        .portfolio video {
+            width: 90%;
+        }
+
+        p {
+            font-size: 1em;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        .presentation .section p {
+            padding-left: 3em;
+        }
+    }
+
+    @media (max-width:400px) {
+        .navbar a {
+            font-size: 6px;
+            letter-spacing: 0.5px;
+            margin: 0.8%;
+        }
+
+        .navbar a:hover {
+            letter-spacing: 0.75px;
+        }
+
+        .portfolio video {
+            width: 85%;
+        }
+
+        p {
+            font-size: 0.7em;
+        }
+
+        .presentation .section p {
+            padding-left: 2em;
+        }
+    }
