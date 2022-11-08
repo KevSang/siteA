@@ -15,34 +15,33 @@
                 <div class="column">
                     <div class="section">
                         <img src="media/nom.png">
-                        <h2>Image aléatoire</h2>
-                        <p>Test</p>
+                        <h2>Image de la journée</h2>
+                        <img class="img2" id="imageID">
+                        <script>
+                            var date = new Date();
+                            var dd = date.getDate();
+                            var mm = date.getMonth() + 1;
+                            var yyyy = date.getFullYear();
+                            var filename = "media/images/" + dd + "-" + mm + "-" + yyyy + ".png";
+                            document.getElementById("imageID").src = filename;
+                        </script>
                     </div>
                     <div class="section">
                         <img src="media/cake.png">
-                        <h2>Lien musique</h2>
+                        <h2>Musique de la journée</h2>
                         <p>Test</p>
                     </div>
                 </div>
                 <div class="column">
                     <div class="section">
                         <img src="media/medaille.png">
-                        <h2>Texte aléatoire</h2>
+                        <h2>Message de la journée</h2>
                         <p>Test</p>
                     </div>
                     <div class="section">
                         <img src="media/code.png">
-                        <h2>Image messenger + countdown</h2>
-                        <p id="myId"></p> 
-                        <script> 
-                            var date = new Date(); 
-                            var dd = date.getDate(); 
-                            var mm = date.getMonth() + 1; 
-                            var yyyy = date.getFullYear(); 
-                            var newDate = dd + "-" + mm + "-" +yyyy; 
-                            var p = document.getElementById("myId"); 
-                            p.innerHTML = newDate; 
-                        </script> 
+                        <h2>Quand tout a commencé</h2>
+                        <p>Test</p>
                     </div>
                 </div>
             </div>
