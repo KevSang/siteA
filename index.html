@@ -4,26 +4,23 @@
         <title>Kevin Sanglier</title>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width"/>
-        <link rel="stylesheet" href="css/main.css"/>
+        <link rel="stylesheet" href="style.css"/>
+        <script src="script.js"></script>
     </head>
 
     <body>
         <div id="presentation" class="presentation">
             <h1>Presentation</h1>
             <p>Here is all the information you need to know me!</p>
+            <p id="container"></p>
             <div class="columns">
                 <div class="column">
                     <div class="section">
                         <img src="media/nom.png">
                         <h2>Image de la journée</h2>
-                        <img class="img2" id="imageID">
+                        <img class="img2" id="imageID" onerror="loadOther()">
                         <script>
-                            var date = new Date();
-                            var dd = date.getDate();
-                            var mm = date.getMonth() + 1;
-                            var yyyy = date.getFullYear();
-                            var filename = "media/images/" + dd + "-" + mm + "-" + yyyy + ".png";
-                            document.getElementById("imageID").src = filename;
+                            document.getElementById("imageID").src = imageFile;
                         </script>
                     </div>
                     <div class="section">
