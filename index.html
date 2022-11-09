@@ -5,6 +5,7 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width"/>
         <link rel="stylesheet" href="style.css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script src="script.js"></script>
     </head>
 
@@ -18,10 +19,7 @@
                     <div class="section">
                         <img src="media/nom.png">
                         <h2>Image de la journée</h2>
-                        <img class="img2" id="imageID" onerror="loadOther()">
-                        <script>
-                            document.getElementById("imageID").src = imageFile;
-                        </script>
+                        <img class="img2" id="imageID">
                     </div>
                     <div class="section">
                         <img src="media/cake.png">
