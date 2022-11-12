@@ -10,6 +10,6 @@ $.get(imageFile)
         document.getElementById("imageID").src = imageFile;
     }).fail(function() {
         console.log(imageFile + " existe pas");
-        var imageFile = "/media/images/" + "1" + ".png";
+        var imageFile = "media/images/" + "1" + ".png";
         document.getElementById("imageID").src = imageFile;
     })
