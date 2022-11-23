@@ -12,10 +12,6 @@ html, body, div, span, h1, h2, h3, a, p, img, video {
     --bordeau: rgb(92, 20, 50);
 }
 
-html {
-    background-color: var(--bordeau);
-}
-
 h1 {
     color: var(--blanc);
     font-weight: bold;
