@@ -5,11 +5,11 @@ var dd = date.getDate();
 var mm = date.getMonth() + 1;
 var yyyy = date.getFullYear();
 
-var minSince = min-29;
-var houSince = hou-22;
-var ddSince = dd-4;
-var mmSince = mm-4;
-var yySince = yyyy-2019;
+var minSince = min - 29;
+var houSince = hou - 22;
+var ddSince = dd - 4;
+var mmSince = mm - 4;
+var yySince = yyyy - 2019;
 if (houSince < 0) {
     houSince = 24 + houSince;
 }
@@ -29,33 +29,33 @@ function getRandom(min, max) { // min and max included
 }
 
 $.get(imageFile)
-    .done(function() {
+    .done(function () {
         document.getElementById("imageID").src = imageFile;
-    }).fail(function() {
-        var imageFile = "media/images/R" + getRandom(0,1) + ".png";
+    }).fail(function () {
+        var imageFile = "media/images/R" + getRandom(0, 1) + ".png";
         document.getElementById("imageID").src = imageFile;
     })
 
 $.get(linkFile)
-    .done(function() {
-        $.get(linkFile, function(data) {
+    .done(function () {
+        $.get(linkFile, function (data) {
             var ytbLink = "https://www.youtube.com/embed/" + data;
             document.getElementById("linkID").src = ytbLink;
         });
-    }).fail(function() {
-        var linkFile = "media/links/R" + getRandom(0,1) + ".txt";
-        $.get(linkFile, function(data) {
+    }).fail(function () {
+        var linkFile = "media/links/R" + getRandom(0, 6) + ".txt";
+        $.get(linkFile, function (data) {
             var ytbLink = "https://www.youtube.com/embed/" + data;
             document.getElementById("linkID").src = ytbLink;
         });
     })
 
 $.get(textFile)
-    .done(function() {
+    .done(function () {
         document.getElementById("textID").src = textFile;
-    }).fail(function() {
-        var textFile = "media/texts/R" + getRandom(0,1) + ".txt";
+    }).fail(function () {
+        var textFile = "media/texts/R" + getRandom(0, 10) + ".txt";
         document.getElementById("textID").src = textFile;
     })
 
-window.onload = function() {document.getElementById("sinceID").innerHTML = timeSince;}
+window.onload = function () { document.getElementById("sinceID").innerHTML = timeSince; }

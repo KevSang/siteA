@@ -1,4 +1,14 @@
-html, body, div, span, h1, h2, h3, a, p, img, video {
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+a,
+p,
+img,
+video {
     font-family: Helvetica;
     margin: 0;
     padding: 0;
@@ -10,6 +20,10 @@ html, body, div, span, h1, h2, h3, a, p, img, video {
     --bleu: rgb(44, 105, 170);
     --bleuf: rgb(16, 64, 116);
     --bordeau: rgb(92, 20, 50);
+}
+
+html {
+    background-color: var(--bordeau);
 }
 
 h1 {
@@ -31,101 +45,102 @@ p {
 }
 
 /* Presentation */
-    .presentation {
-        background-color: var(--bordeau);
-        background-size: 100% 100%;
-        padding: 2em 2em 2em 2em;
-    }
+.presentation {
+    background-color: var(--bordeau);
+    background-size: 100% 100%;
+    padding: 2em 2em 2em 2em;
+}
 
-    .presentation .section {
-        border-radius: 15px;
-        width: 98%;
-        border: solid 4px var(--bordeau);
-        background-color: var(--bleu);
-        overflow: hidden;
-    }
+.presentation .section {
+    border-radius: 15px;
+    width: 98%;
+    border: solid 4px var(--bordeau);
+    background-color: var(--bleu);
+    overflow: hidden;
+}
 
-    .presentation .section h2 {
-        padding: 1em 1em 0em 3em;
-    }
+.presentation .section h2 {
+    padding: 1em 1em 0em 3em;
+}
 
-    .presentation .section p {
-        padding: 1em 1em 1em 4em;
-    }
+.presentation .section p {
+    padding: 1em 1em 1em 4em;
+}
 
-    .presentation .section img {
-        max-width: 100%;
-        height: auto;
-    }
+.presentation .section img {
+    max-width: 100%;
+    height: auto;
+}
 
-    .columns {
-        width: 100%;
-    }
+.columns {
+    width: 100%;
+}
 
+.column {
+    width: 100%;
+}
+
+img {
+    width: 30px;
+    padding: 1.4em 0em 0em 1.4em;
+    float: left;
+}
+
+iframe {
+    border: solid var(--bleuf);
+    border-radius: 2em;
+    margin: 5% 5% 5% 5%;
+    padding: 2% 2% 2% 2%;
+    width: 86%;
+}
+
+.ytb {
+    border: 0px;
+    padding: 0 0 0 0;
+    width: 90%;
+}
+
+.img2 {
+    border-radius: 4em;
+    padding: 5% 5% 5% 5%;
+    width: 90%;
+}
+
+@media (min-width: 1000px) {
     .column {
-        width:100%;
-    }
-
-    img {
-        width: 30px;
-        padding: 1.4em 0em 0em 1.4em;
+        width: 50%;
         float: left;
     }
 
-    iframe {
-        border: solid var(--bleuf);
-        border-radius: 2em;
-        margin: 5% 5% 5% 5%;
-        padding: 2% 2% 2% 2%;
-        width: 86%;
+    .columns {
+        content: "";
+        display: table;
+        clear: both;
     }
-
-    .ytb {
-        border: 0px;
-        padding: 0 0 0 0;
-        width: 90%;
-    }
-
-    .img2 {
-        border-radius: 4em;
-        padding: 5% 5% 5% 5%;
-        width: 90%;
-    }
-    
-    @media (min-width: 1000px) {
-        .column {
-            width: 50%;
-            float: left;
-        }
-        .columns {
-            content: "";
-            display: table;
-            clear: both;
-        }
-    }
+}
 
 /* Tailles */
 
-    @media (max-width:600px) {
-        p {
-            font-size: 1em;
-        }
-
-        h1 {
-            font-size: 2em;
-        }
-
-        .presentation .section p {
-            padding-left: 3em;
-        }
+@media (max-width:600px) {
+    p {
+        font-size: 1em;
     }
 
-    @media (max-width:400px) {
-        p {
-            font-size: 0.7em;
-        }
-
-        .presentation .section p {
-            padding-left: 2em;
-        }
+    h1 {
+        font-size: 2em;
     }
+
+    .presentation .section p {
+        padding-left: 3em;
+    }
+}
+
+@media (max-width:400px) {
+    p {
+        font-size: 0.7em;
+    }
+
+    .presentation .section p {
+        padding-left: 2em;
+    }
+}
