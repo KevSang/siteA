@@ -32,7 +32,7 @@ $.get(imageFile)
     .done(function () {
         document.getElementById("imageID").src = imageFile;
     }).fail(function () {
-        var imageFile = "media/images/R" + getRandom(0, 1) + ".png";
+        var imageFile = "media/images/R" + getRandom(0, 47) + ".png";
         document.getElementById("imageID").src = imageFile;
     })
 
@@ -54,7 +54,7 @@ $.get(textFile)
     .done(function () {
         document.getElementById("textID").src = textFile;
     }).fail(function () {
-        var textFile = "media/texts/R" + getRandom(0, 10) + ".txt";
+        var textFile = "media/texts/R" + getRandom(0, 50) + ".txt";
         document.getElementById("textID").src = textFile;
     })
 
